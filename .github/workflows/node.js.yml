@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v1
       - name: pnpm-setup
         uses: pnpm/action-setup@v2
+        with:
+          version: '8.x.x'
 
       - name: Installing my packages
         run: pnpm install --frozen-lockfile
