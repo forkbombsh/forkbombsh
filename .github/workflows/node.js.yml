@@ -23,7 +23,7 @@ jobs:
         with:
           version: '8.x.x'
 
-      - name: install ur packages, most of which are probably unneeded
+      - name: install ur packages
         run: pnpm install --frozen-lockfile
 
       - name: build my stupid app.
@@ -31,7 +31,7 @@ jobs:
 
       - name: pls depoly
         # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.4.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: out
