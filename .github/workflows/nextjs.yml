@@ -66,9 +66,9 @@ jobs:
       #   run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: JamesIves/github-pages-deploy-action@v4.4.3
-          with:
-            branch: gh-pages
-            folder: out
+        with:
+          branch: gh-pages
+          folder: out
 
   # Deployment job
   deploy:
